@@ -65,6 +65,7 @@ function setup() {
     let img = get();
     img.resize(28, 28);
     img.loadPixels();
+    console.log(img)
     for (let i = 0; i < len; i++) {
       let bright = img.pixels[i * 4];
       inputs[i] = (255 - bright) / 255.0;
